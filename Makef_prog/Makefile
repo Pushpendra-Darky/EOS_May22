@@ -9,7 +9,7 @@ sub.o:sub.c
 	$(CC) -c -o sub.o sub.c
 mul.o:mul.c
 	$(CC) -c -o mul.o mul.c
-div.o:div.c
+divs.o:divs.c
 	$(CC) -c -o divs.o divs.c
 run:
 	./exe

@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 26 23:00:32 2022
+# Make data base, printed on Thu May 26 23:46:58 2022
 
 # Variables
 
@@ -183,7 +181,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-13761904-a530-46de-9907-fc80a27fdb66.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-305ebc39-8a42-47d6-bb51-9a47740da216.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -198,8 +196,6 @@ XDG_CURRENT_DESKTOP = Unity
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /home/darky/CDAC/PGDESD/EOS_May22
 # default
 .VARIABLES := 
 # automatic
@@ -221,8 +217,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # default
 MAKEFILES := 
@@ -237,11 +231,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/576fae46_018a_4c5b_be56_a6e0c486fe35
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/8712bcd3_4710_4dd8_b07e_2995a7c6d918
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.165
+GNOME_TERMINAL_SERVICE = :1.949
 # default
 SUFFIXES := 
 # environment
@@ -259,11 +253,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 9691
+VSCODE_PID = 17609
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=8fc65750a4074181fe9d95d3628f6207
 # variable set hash-table stats:
-# Load=125/1024=12%, Rehash=0, Collisions=16/150=11%
+# Load=123/1024=12%, Rehash=0, Collisions=16/148=11%
 
 # Pattern-specific Variable Values
 
@@ -289,11 +283,13 @@ div.c:
 
 exe: main.o add.o sub.o mul.o divs.o
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 3):
 	$(CC) -o exe main.o add.o sub.o mul.o divs.o
+
+ 
+make: *** No rule to make target 'all'.  Stop.
 
 # Not a target:
 all:
@@ -408,6 +404,6 @@ mul.c:
 # strcache performance: lookups = 45 / hit rate = 44%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/45=2%
-# Finished Make data base on Thu May 26 23:00:32 2022
+# Finished Make data base on Thu May 26 23:46:58 2022
 
  
