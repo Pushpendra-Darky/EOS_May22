@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/darky/CDAC/PGDESD/EOS_May22/Makef_prog'
+cc -c -o main.o main.c
+cc -c -o add.o add.c
+cc -c -o sub.o sub.c
+cc -c -o mul.o mul.c
+cc    -c -o divs.o divs.c
+cc -o exe main.o add.o sub.o mul.o divs.o
+make: Leaving directory '/home/darky/CDAC/PGDESD/EOS_May22/Makef_prog'
+ 
