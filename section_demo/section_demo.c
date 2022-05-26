@@ -8,9 +8,9 @@ int main()
     int result=0;
     int *p=NULL;
     p=(int *)malloc(sizeof(int));
-
+    printf("ENTER THE VALUE OF a\n");
     scanf("%d",&a);
-    result=add(10,20);
+    result=add(a,b);
     printf("ADDITION OF a and b %d\n",result);
 
     return 0;
