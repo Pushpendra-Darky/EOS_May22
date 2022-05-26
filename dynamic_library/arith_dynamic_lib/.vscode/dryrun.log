@@ -1,0 +1,9 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/darky/CDAC/PGDESD/EOS_May22/dynamic_library/arith_dynamic_lib'
+cc -c -o add.o add.c
+cc -c -o sub.o sub.c
+cc -c -o mul.o mul.c
+cc -c -o div.o div.c
+cc -shared -fpic -o libarith.so add.o sub.o mul.o div.o
+make: Leaving directory '/home/darky/CDAC/PGDESD/EOS_May22/dynamic_library/arith_dynamic_lib'
+ 
