@@ -1,7 +1,7 @@
 # **Embedded OS Assignments**
 
 ## **Day1**
- ### ***Learned Concept***
+ #### ***Learned Concept***
  - 2 Tier and 3 Tier Embedded Systems
 - Hardware
   - CPU
@@ -23,12 +23,12 @@
   - Stack
   - Registers
 
-### **Work Done**
+#### ***Work Done***
 - **Arith demo** Is Uploaded.
 
 
 ## Day2
- ### ***Learned Concept***
+#### ***Learned Concept***
  - Booting procedure
   - ROM BL
   - PBL
@@ -36,12 +36,12 @@
   - Kernel (Linux)
   - RFS (Buildroot)
 
-### **Work Done**
+#### ***Work Done***
 - **Arith demo** Updated.
 
 
 ## Day3
-### ***Learned Concept***
+#### ***Learned Concept***
 - Makefile
 - Toolchain
 
@@ -137,7 +137,7 @@
 
 - Superuser
 
-### **Work Done**
+#### ***Work Done***
 - **Arith Prog** Updated Using **Cross-Compiling** of **x86-64[Host]** for **Arm-64 architecture[Target]**.
 - **Calculator** Program Uploaded Using **Makefile**.
 - **Section Demo** Program is uploaded[Used **objdump** to see the section].
@@ -146,7 +146,7 @@
 
 
 ## Day4
-### ***Learned Concept***
+#### ***Learned Concept***
 - Library
 
   - Static Libraries
@@ -192,7 +192,7 @@
   - Explore
     - Return values for read and write system calls
 
-### **Work Done**
+#### ***Work Done***
 - Uploaded **Static Library[.a]** Program.[Used  **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** On Other System ].
 - Uploaded **Dynamic Library[.so]** Program.[Used **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** WITH **$ export LD_LIBRARY_PATH=.** Command On Other System ].
 - Uploaded **System Call** Demo.[For Create,Write].
@@ -201,7 +201,7 @@
 
 
 ## Day5
-### ***Learned Concept***
+#### ***Learned Concept***
 - CPU (Uniprocessor)
 
   - Physical Hardware => PC, SP, GPR, Flags
@@ -229,7 +229,7 @@
   - Context Switching
     - Save the current context
     - Scheduling
-    - Restore0 the new context
+    - Restore the new context
 
 - Process State Diagram
   - New
@@ -240,5 +240,5 @@
 
 - Fork
 
-### **Work Done**
+#### ***Work Done***
 - **Fork** Program Demo Uploaded.
