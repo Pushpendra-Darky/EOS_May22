@@ -8,6 +8,17 @@ int main()
 
     printf("Before Fork Calling\n");
     id = fork();
-    printf("After Fork Called Print twice 1st for Parent & 2nd For Child\n");
+    if(0==id)
+    {
+        printf("Child  Process: ID: %d PPID: %d\n",getpid(),getppid());
+    }
+    else if(0<id)
+    {
+        printf("Parent Process: ID: %d PPID: %d\n",getpid(),getppid());
+    }
+    else
+    {
+        printf("\nFork Failed\n");
+    }
     return 0;
 }
