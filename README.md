@@ -242,3 +242,11 @@
 
 #### ***Work Done***
 - **Fork** Program Demo Uploaded.
+
+## Day6
+
+
+#### ***Work Done***
+- **Fork** Program Is Implemented By Using getpid() & getppid()..
+- **Zombie** Program Is Uploaded Using **Fork** To Create Child Process[Die/Exit Before Its Parent Proccess] Corresponding to Its Parent Process[Used Sleep()].
+-- - **Orphan** Program Is Uploaded Using **Fork** To Create Child Process[Used Sleep()] Corresponding to Its Parent Process[Die/Exit First Before Child Process]. 
