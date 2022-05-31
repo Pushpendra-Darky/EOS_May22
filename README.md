@@ -1,8 +1,8 @@
 # **Embedded OS Assignments**
 
 ## **Day1**
- #### ***Learned Concept***
- - 2 Tier and 3 Tier Embedded Systems
+#### ***Learned Concept***
+- 2 Tier and 3 Tier Embedded Systems
 - Hardware
   - CPU
     - PC/ IP
@@ -138,11 +138,11 @@
 - Superuser
 
 #### ***Work Done***
-- **Arith Prog** Updated Using **Cross-Compiling** of **x86-64[Host]** for **Arm-64 architecture[Target]**.
+- **Arith Prog** Updated Using **Cross-Compiling** of **x86-64 [ Host ] ** for **Arm-64 architecture [ Target ] **.
 - **Calculator** Program Uploaded Using **Makefile**.
-- **Section Demo** Program is uploaded[Used **objdump** to see the section].
-- **Process Identity[pid]** Program is uploaded[checked the process[system trace] by **pstree**].
-- **Library Call & System Call** Program is uploaded[cheacked by **strace**].
+- **Section Demo** Program is uploaded[ Used **objdump** to see the section ].
+- **Process Identity [ pid ] ** Program is uploaded [ checked the process [ system trace ] by **pstree** ].
+- **Library Call & System Call** Program is uploaded [ cheacked by **strace** ].
 
 
 ## Day4
@@ -193,7 +193,7 @@
     - Return values for read and write system calls
 
 #### ***Work Done***
-- Uploaded **Static Library[.a]** Program.[Used  **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** On Other System ].
+- Uploaded **Static Library [.a]** Program.[Used  **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** On Other System ].
 - Uploaded **Dynamic Library[.so]** Program.[Used **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** WITH **$ export LD_LIBRARY_PATH=.** Command On Other System ].
 - Uploaded **System Call** Demo.[For Create,Write].
 - Uploaded System Call Assignment 1 [For Create & Write ].
@@ -244,9 +244,86 @@
 - **Fork** Program Demo Uploaded.
 
 ## Day6
+#### ***Learned Concept***
+- Batch Systems
+- Multiuser Systems
+- Multiprogramming
+- Multitasking Systems
+- Multiprocessing Systems
+- Multithreading Systems
+
+- Process Scheduling
+
+  - Round Robin
+  - Priority
+  - FIFO
+  - Shortest Job First
+
+- Priority Based Scheduling
+
+  - Preemptive Scheduling
+  - Non-Preemptive Scheduling
+
+- Shortest Job First
+
+  - Preemptive Scheduling
+  - Non-Preemptive Scheduling
+
+- Response Times
+- Throughput
+
+- Fork
+
+  - Zombie Processes
+  - Orphan Processes
+  - Child inherits file descriptors from the parent
+
 
 
 #### ***Work Done***
+
 - **Fork** Program Is Implemented By Using getpid() & getppid()..
 - **Zombie** Program Is Uploaded Using **Fork** To Create Child Process[Die/Exit Before Its Parent Proccess] Corresponding to Its Parent Process[Used Sleep()].
 -- - **Orphan** Program Is Uploaded Using **Fork** To Create Child Process[Used Sleep()] Corresponding to Its Parent Process[Die/Exit First Before Child Process]. 
+
+## Day7
+#### ***Learned Concept***
+- Interprocess Communication
+  - Pipes
+    - Unidrectional
+    - Related processes
+    - Data is Sequential
+    - pipe, read, write, close
+  - FIFO aka Named Pipes
+    - Unidirectional
+    - Unrelated processes
+    - Data is Sequential
+    - open, read, wirte, close
+
+#### ***Assignment***
+
+1. Write your own utility using system calls (open, read, write, close) to copy data from one file to another file. Essentially you are implementing a copy utility. Fullfledged utility should support the following options:
+
+- Handling all the errors
+- cp srcfile destfile
+
+2. Write your own utility using library calls (fopen, fread, fwrite, fclose) to copy data from one file to another file. Essentially you are implementing a copy utility. Fullfledged utility should support the following options:
+
+- Handling all the errors
+- cp srcfile destfile
+
+3. Research
+
+- Which of the following programs took more time to copy file
+  1. Small
+  2. Medium
+  3. Large
+- Justify your results => Why does system call / library call take time to copy file.
+
+
+#### ***Work Done***
+- **PIPE** Program Is Uploaded[ Used PIPE For IPC B/W **RELATED PROCESS** ]
+- **FIFO** Program Is Uploaded[ Used FIFO For IPC B/W **UNRELATED PROCESS** ]
+  - Created FIFO File By $ mkfifo -m 0660 fifofile[0660 ie for READ,WRITE ]
+- **THREAD** Program Is Uploaded[ Used $ gcc -o executable source -lpthread ]
+
