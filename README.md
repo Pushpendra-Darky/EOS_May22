@@ -170,7 +170,7 @@
   - ar crv
   - ar x
 
-- Assignment (Both: Static and Shared Object):
+#### ***Assignment (Both: Static and Shared Object):***
 
   - Repeat the demo shown in the class
   - Enhance the library to add mul and div functions
@@ -243,8 +243,15 @@
 #### ***Work Done***
 - **Fork** Program Demo Uploaded.
 
+
 ## Day6
 #### ***Learned Concept***
+- Fork
+
+  - Zombie Processes
+  - Orphan Processes
+  - Child inherits file descriptors from the parent
+
 - Batch Systems
 - Multiuser Systems
 - Multiprogramming
@@ -272,19 +279,10 @@
 - Response Times
 - Throughput
 
-- Fork
-
-  - Zombie Processes
-  - Orphan Processes
-  - Child inherits file descriptors from the parent
-
-
-
 #### ***Work Done***
-
 - **Fork** Program Is Implemented By Using getpid() & getppid()..
 - **Zombie** Program Is Uploaded Using **Fork** To Create Child Process[Die/Exit Before Its Parent Proccess] Corresponding to Its Parent Process[Used Sleep()].
--- - **Orphan** Program Is Uploaded Using **Fork** To Create Child Process[Used Sleep()] Corresponding to Its Parent Process[Die/Exit First Before Child Process]. 
+- **Orphan** Program Is Uploaded Using **Fork** To Create Child Process[Used Sleep()] Corresponding to Its Parent Process[Die/Exit First Before Child Process]. 
 
 ## Day7
 #### ***Learned Concept***
@@ -299,6 +297,9 @@
     - Unrelated processes
     - Data is Sequential
     - open, read, wirte, close
+
+- POSIX Threads
+
 
 #### ***Assignment***
 
@@ -320,10 +321,55 @@
   3. Large
 - Justify your results => Why does system call / library call take time to copy file.
 
-
 #### ***Work Done***
 - **PIPE** Program Is Uploaded[ Used PIPE For IPC B/W **RELATED PROCESS** ]
 - **FIFO** Program Is Uploaded[ Used FIFO For IPC B/W **UNRELATED PROCESS** ]
   - Created FIFO File By $ mkfifo -m 0660 fifofile[0660 ie for READ,WRITE ]
 - **THREAD** Program Is Uploaded[ Used $ gcc -o executable source -lpthread ]
 
+
+## Day8
+#### ***Learned Concept***
+- POSIX Threads
+
+  - pthread_create
+  - pthread_join
+
+- Threads
+
+  - Joinable and Detachable
+
+- Thread Attributes
+
+  - pthread_attr_init
+  - pthread_attr_setdetachstate
+  - pthread_attr_destroy
+  - Scope
+  - Inherit Scheduling
+  - Scheduling Parameters
+  - Stack and Stack Size
+
+- Threads
+
+  - are light weight processes
+  - TCB
+  - Threads share the following sections with Process
+    - Text
+    - Data
+    - BSS
+    - Heap
+  - Threads do not share the following sections with Process
+    - Stack
+    - means that each threads has its own stack
+
+- Resource
+  - Anything that is used by a thread or a process is called a resource
+  - Shared Resource
+    - Resource that is shared between multiple threads/ processes
+    - Race Condition => Data corruption
+
+#### ***Work Done***
+- **Thread** Program Is Implemented.
+  - Uploaded **Joinable**[By Default Thread Is Joinable] And **Detachable** Thread Programs.
+
+- Race Condition[Data curruption] Program Is Uploaded.
