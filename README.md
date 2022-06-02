@@ -326,6 +326,9 @@
 - **FIFO** Program Is Uploaded[ Used FIFO For IPC B/W **UNRELATED PROCESS** ]
   - Created FIFO File By $ mkfifo -m 0660 fifofile[0660 ie for READ,WRITE ]
 - **THREAD** Program Is Uploaded[ Used $ gcc -o executable source -lpthread ]
+#### ***Assignment Uploaded***
+- Assignment 1 Program Uploaded [ Creating Copy Utility Using System Call To Copy Data From Src To Dest file ]
+- Assignment 2 Program Uploaded [ Creating Copy Utility Using Library Call To Copy Data From Src To Dest file ]
 
 
 ## Day8
