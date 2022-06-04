@@ -328,7 +328,9 @@
 - **THREAD** Program Is Uploaded[ Used $ gcc -o executable source -lpthread ]
 #### ***Assignment Uploaded***
 - Assignment 1 Program Uploaded [ Creating Copy Utility Using System Call To Copy Data From Src To Dest file ]
+ - Created **bin** Folder Then Shifted **Bin File** Of **Program** Into **/bin** Folder Then Added This bin Folder's Path Into **bashrc** File, By This We Can Use It Now Anywhere In This System[By cpl source_file destination_file]
 - Assignment 2 Program Uploaded [ Creating Copy Utility Using Library Call To Copy Data From Src To Dest file ]
+ - Created **bin** Folder Then Shifted **Bin File** Of **Program** Into **/bin** Folder Then Added This bin Folder's Path Into **bashrc** File, By This We Can Use It Now Anywhere In This System[By cpl source_file destination_file]
 
 
 ## Day8
@@ -376,3 +378,12 @@
   - Uploaded **Joinable**[By Default Thread Is Joinable] And **Detachable** Thread Programs.
 
 - Race Condition[Data curruption] Program Is Uploaded.
+
+
+## Day9
+
+#### ***Work Done***
+- Mutex[Futex] Program Uploaded[Solve Data Curruption-Race Condition]
+- Deadlock Condition[In Thread] Program Is Uploaded.
+- Recursive Mutex[Solved DeadLock Condition] Program Is Uploaded.
+- Mutex Program Using Trylock Is Uploaded.
