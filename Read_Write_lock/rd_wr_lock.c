@@ -40,6 +40,7 @@ void *writer_thread1(void *data)
     printf("Writer 1: Inside The Critical Region\n");
 
     count++;
+    printf("Writer 1: Count Value %d\n",count);
 
     pthread_rwlock_unlock(&count_rd_wr_lock);
     printf("Writer 1: Left The Critical Region\n");
