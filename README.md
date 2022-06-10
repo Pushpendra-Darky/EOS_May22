@@ -380,6 +380,26 @@
 
 
 ## Day9
+#### ***Learned Concept***
+- Mutual Exclusion
+
+  - Mutex
+    - Futex
+    - Recursive Mutex
+    - Error Checking Mutex
+    - Adaptive Mutex
+  - Semaphores
+  - Read write locks
+
+- Mutex lock
+
+  - Lock
+  - Try Lock
+  - Timed Lock
+
+- Critical Section/ Region
+  - Small as possible
+- /usr/include/pthread.h
 
 #### ***Work Done***
 - Mutex[Futex] Program Uploaded[Solve Data Curruption-Race Condition]
@@ -389,7 +409,61 @@
 
 
 ## Day10
+#### ***Learned Concept***
+- Semaphores
+
+  - Binary Semaphores
+    - Mutual Exclusion => Init => 1
+    - Signaling
+  - Counting Semaphores
+
+- Semaphore
+
+  - sem_t
+  - sem_init
+  - sem_destroy
+  - sem_wait => Decrement 1 => Blocking => sem <= 0
+  - sem_post => Increment 1
 
 #### ***Work Done***
-- Semaphore[ME] Program Uploaded[Solved Race Condition]
-- DeadLock Problem Using Semaphore Is Uploaded.
+- ***Semaphore[ME]*** Program Uploaded[Solved Race Condition]
+- ***DeadLock*** Problem Using Semaphore Is Uploaded.
+
+
+## Day11
+#### ***Learned Concept***
+- Counting Semaphore
+
+  - Resource Management
+  - sem_init => Maximum number of resources available => Same type
+
+- Assignment: Use signalling semaphore for bilateral rendezvous (Task 1 and Task 2 => input and processing task respectively), when the initial value of both the semaphores is 1.
+- Assignment: Memory Block Manager - Using the counting semaphore to manage the memory blocks.\
+
+- Read Write Locks
+
+#### ***Work Done***
+- ***Signalling*** Semaphore Program Uploaded
+- ***Read Write*** ME Program Uploaded
+
+## Day12
+#### ***Learned Concept***
+- Exec
+
+  - Used to load a new program in the current address space of process
+  - After exec no statments in the current process are executed
+
+- Barriers
+
+  - pthread_barrier_init
+  - pthread_barrier_destroy
+  - pthread_barrier_wait
+
+- Conditional Variables (Condvars)
+
+#### ***Work Done***
+- ***Exec*** Program Uploaded
+- ***Barrier*** Program Uploaded
+- ***Conditional Variable[condvar]*** Program Uploaded
+- ***Shell*** Program Uploaded
+
