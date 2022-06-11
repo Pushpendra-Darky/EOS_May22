@@ -390,6 +390,7 @@
     - Adaptive Mutex
   - Semaphores
   - Read write locks
+#### ***Assignment ECM:*** Write a program to demonstrate use of error checking mutex
 
 - Mutex lock
 
@@ -437,8 +438,8 @@
   - Resource Management
   - sem_init => Maximum number of resources available => Same type
 
-- Assignment: Use signalling semaphore for bilateral rendezvous (Task 1 and Task 2 => input and processing task respectively), when the initial value of both the semaphores is 1.
-- Assignment: Memory Block Manager - Using the counting semaphore to manage the memory blocks.\
+#### ***Assignment SSP:***: Use signalling semaphore for bilateral rendezvous (Task 1 and Task 2 => input and processing task respectively), when the initial value of both the semaphores is 1.
+#### ***Assignment CSP:***: Memory Block Manager - Using the counting semaphore to manage the memory blocks.\
 
 - Read Write Locks
 
@@ -466,4 +467,40 @@
 - ***Barrier*** Program Uploaded
 - ***Conditional Variable[condvar]*** Program Uploaded
 - ***Shell*** Program Uploaded
+
+
+## Day13
+#### ***Learned Concept***
+- Shared Memory
+
+  - shm_open
+  - ftruncate
+  - mmap (attach the shared memory to the address space of the process)
+  - Allocated in the User space
+  - Fastest IPC
+  - Race condition => Mutual Exclusion => Semaphores
+  - Fixed size of data
+#### ***Assignment SHM***:
+    1. P1: Declare your own struct => {pid, ppid}
+    2. P1: Tranfer struct to another process P2
+    3. P2: Recv this struct and print it out
+
+- Message Queues
+  - mq_open
+  - mq_send, mq_recv
+  - Attributes => # number of messages, Max size of the message
+  - In-built synchronization
+  - Allows to communicate multiple messages and messages can be of different sizes
+#### ***Assignment MQ***:
+    1. P1: Declare your own struct => {pid, ppid}
+    2. P1: Tranfer struct to another process P2
+    3. P2: Recv this struct and print it out
+
+#### ***Work Done***
+- Shared Memory Program Uploaded
+- Message Queue Program Uploaded
+#### ***Assignment Uploaded***
+
+
+
 
