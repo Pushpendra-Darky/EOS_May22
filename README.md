@@ -499,8 +499,38 @@
 #### ***Work Done***
 - Shared Memory Program Uploaded
 - Message Queue Program Uploaded
-#### ***Assignment Uploaded***
 
+
+## Day14
+#### ***Learned Concept***
+- Sockets
+
+  - DLL/ MAC => Ethernet Address/ MAC Address/ Hardware Address
+  - Network => IP Address/ IP Protocol (IPv4 [32-bit]/ IPv6[128-bit])
+  - Transport => TCP/ UDP => Port Number (16 bit number)
+  - Application => HTTP/ FTP/ SSH/ Telnet
+
+- U-Boot
+
+  - git clone https://source.denx.de/u-boot/u-boot.git
+  - ls configs
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- qemu_arm_defconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+  - qemu-system-arm -machine ?
+  - qemu-system-arm -machine virt -serial stdio -display none -bios u-boot.bin
+  - U-Boot shell
+    - bdinfo
+    - setenv
+    - printenv
+    - saveenv
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- clean
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- mrproper
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- -j8
+
+#### ***Work Done***
+- Socket Program Is Uploaded.
 
 
 
