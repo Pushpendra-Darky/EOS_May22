@@ -403,10 +403,10 @@
 - /usr/include/pthread.h
 
 #### ***Work Done***
-- Mutex[Futex] Program Uploaded[Solve Data Curruption-Race Condition]
-- Deadlock Condition Using Mutex [In Thread] Program Is Uploaded.
-- Recursive Mutex[Solved DeadLock Condition] Program Is Uploaded.
-- Mutex Program Using Trylock Is Uploaded.
+- ***Mutex[Futex]*** Program Uploaded[Solve Data Curruption-Race Condition]
+- ***Deadlock Condition Using Mutex*** [In Thread] Program Is Uploaded.
+- ***Recursive Mutex***[Solved DeadLock Condition] Program Is Uploaded.
+- ***Mutex*** Program Using ***Trylock*** Is Uploaded.
 
 
 ## Day10
@@ -446,6 +446,9 @@
 #### ***Work Done***
 - ***Signalling*** Semaphore Program Uploaded
 - ***Read Write*** ME Program Uploaded
+#### ***Work Done***
+- Signalling Semaphore Program Assignment Is Uploaded
+
 
 ## Day12
 #### ***Learned Concept***
@@ -497,8 +500,10 @@
     3. P2: Recv this struct and print it out
 
 #### ***Work Done***
-- Shared Memory Program Uploaded
-- Message Queue Program Uploaded
+- ***Shared Memory*** Program Uploaded
+- ***Message Queue*** Program Uploaded
+- ***Shared Memory*** Program Using Structure Program Assignment Is Upload
+- ***Message Queue*** Program Usign Structure Program Is Uploaded
 
 
 ## Day14
@@ -530,7 +535,46 @@
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- -j8
 
 #### ***Work Done***
-- Socket Program Is Uploaded.
+- ***Socket*** Program Is Uploaded.
+
+
+## Day15
+#### ***Learned Concept***
+- Kernel
+
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- bcm2835_defconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+  - qemu-system-arm -M raspi2 -m 512M -kernel arch/arm/boot/zImage -nographic -append "console=ttyAMA0,115200 root=/dev/mmcblk0p2 rootwait rw" -cpu cortex-a15 -dtb ./arch/arm/boot/dts/bcm2836-rpi-2-b.dtb
+
+- Root FS
+
+  - wget https://busybox.net/downloads/busybox-1.32.1.tar.bz2
+  - bunzip2 < busybox-1.32.1.tar.bz2 | tar xvf -
+  - cd busybox-1.32.1
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- defconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
+    - Enable static linking
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- install
+    - Create root fs in \_install directory locally
+  - cd \_install
+  - find . | cpio -o --format=newc > ../rootfs.img
+  - cd ..
+  - gzip -c rootfs.img > rootfs.img.gz
+  - qemu-system-arm -M raspi2 -m 512M -kernel zImage -nographic -append "console=ttyAMA0,115200" -cpu cortex-a15 -dtb bcm2836-rpi-2-b.dtb -initrd rootfs.img.gz -append "root=/dev/ram rdinit=/bin/sh"
+  - mkdir proc sys dev etc etc/init.d
+  - touch \_install/etc/init.d/rcS
+  - chmod +x \_install/etc/init.d/rcS
+
+  ```bash
+    #!/bin/sh
+    mount -t proc none /proc
+    mount -t sysfs none /sys
+    /sbin/mdev -s
+    
+    
+  ```
+#### ***Work Done***
+- ***Shared Memory*** Program Using ***Semaphore*** Is Uploaded.
 
 
 
