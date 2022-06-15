@@ -196,8 +196,8 @@
 - Uploaded **Static Library [.a]** Program.[Used  **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** On Other System ].
 - Uploaded **Dynamic Library[.so]** Program.[Used **(CC) -o EXE_NAME SRC_NAME -L. -l_LIB_NAME** WITH **$ export LD_LIBRARY_PATH=.** Command On Other System ].
 - Uploaded **System Call** Demo.[For Create,Write].
-- Uploaded System Call Assignment 1 [For Create & Write ].
-- Uploaded System Call Assignment 2 [For Create,Read & Print].
+- Uploaded System Call ***Assignment 1*** [For Create & Write ].
+- Uploaded System Call ***Assignment 2*** [For Create,Read & Print].
 
 
 ## Day5
@@ -327,9 +327,9 @@
   - Created FIFO File By $ mkfifo -m 0660 fifofile[0660 ie for READ,WRITE ]
 - **THREAD** Program Is Uploaded[ Used $ gcc -o executable source -lpthread ]
 #### ***Assignment Uploaded***
-- Assignment 1 Program Uploaded [ Creating Copy Utility Using System Call To Copy Data From Src To Dest file ]
+- ***Assignment 1*** Program Uploaded [ Creating Copy Utility Using System Call To Copy Data From Src To Dest file ]
   - Created **bin** Folder Then Shifted **Bin File** Of **Program** Into **/bin** Folder Then Added This bin Folder's Path Into **bashrc** File, By This We Can Use It Now Anywhere In This System[By cps source_file destination_file]
-- Assignment 2 Program Uploaded [ Creating Copy Utility Using Library Call To Copy Data From Src To Dest file ]
+- ***Assignment 2*** Program Uploaded [ Creating Copy Utility Using Library Call To Copy Data From Src To Dest file ]
   - Created **bin** Folder Then Shifted **Bin File** Of **Program** Into **/bin** Folder Then Added This bin Folder's Path Into **bashrc** File, By This We Can Use It Now Anywhere In This System[By cpl source_file destination_file]
 
 
@@ -407,6 +407,7 @@
 - ***Deadlock Condition Using Mutex*** [In Thread] Program Is Uploaded.
 - ***Recursive Mutex***[Solved DeadLock Condition] Program Is Uploaded.
 - ***Mutex*** Program Using ***Trylock*** Is Uploaded.
+- ***Assignment Upload: Error Checking Mutex***
 
 
 ## Day10
@@ -448,6 +449,7 @@
 - ***Read Write*** ME Program Uploaded
 #### ***Work Done***
 - Signalling Semaphore Program Assignment Is Uploaded
+- ***Assignment SSP:*** SIgnaling Semaphore Assignment Upload.
 
 
 ## Day12
@@ -504,6 +506,8 @@
 - ***Message Queue*** Program Uploaded
 - ***Shared Memory*** Program Using Structure Program Assignment Is Upload
 - ***Message Queue*** Program Usign Structure Program Is Uploaded
+- ***Assignment Upload*** : Shared Memory Using Structure Assignment  Upload
+- ***Assignment Upload*** : Message Queue Using Structure Assignment Upload
 
 
 ## Day14
