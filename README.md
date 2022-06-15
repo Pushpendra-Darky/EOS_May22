@@ -447,8 +447,6 @@
 #### ***Work Done***
 - ***Signalling*** Semaphore Program Uploaded
 - ***Read Write*** ME Program Uploaded
-#### ***Work Done***
-- Signalling Semaphore Program Assignment Is Uploaded
 - ***Assignment SSP:*** SIgnaling Semaphore Assignment Upload.
 
 
